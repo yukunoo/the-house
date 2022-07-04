@@ -5,7 +5,7 @@ import index from '@/views/Index.vue';
 Vue.use(VueRouter);
 
 export default new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   scrollBehavior() {
     return { x: 0, y: 0 };
