@@ -105,7 +105,7 @@ export default {
           this.$gtm.trackEvent({
             event: 'success-link', // Event etype [default = 'interaction'] (Optional)
             name: this.name,
-            phone: this.phon,
+            phone: this.phone,
             room_id: this.$route.params.id,
           });
         }

@@ -2,7 +2,13 @@
   <swiper class="swiper" :options="swiperOption">
     <swiper-slide v-for="item in getTargetId" :key='item'>
       <div class="bg-cover" :style="{backgroundImage:`url(${item})`}">
-        <img src="../assets/imgs/Group 11.svg" alt="">
+        <router-link
+          :to="{
+            name: 'Home',
+          }"
+        >
+          <img src="../assets/imgs/Group 11.svg" alt="">
+        </router-link>
       </div>
     </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
