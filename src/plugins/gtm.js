@@ -8,7 +8,7 @@ Vue.use(VueGtm, {
   // enable track or not (optional)
   enabled: process.env.NODE_ENV === 'production',
   ignoredViews: ['404'],
-  vueRouter: router,
+  // vueRouter: router,
   // display console logs debugs or not (optional)
   debug: false,
 });
